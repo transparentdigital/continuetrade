@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Rajdhani:400,600,500,700' rel='stylesheet' type='text/css'>
+        <link href="css/normalize.css" type="text/css" rel="stylesheet" >
+        <link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet" >
+        <link href="css/component.css" type="text/css" rel="stylesheet" >
+        <link href="css/site-style.css" type="text/css" rel="stylesheet" >
+    </head>
+    <body>
+        <!--Dialog Login Form-->
+        <div id="loginForm" class="dialog">
+            <div class="error-msg">
+                <span>Username/Password doesn’t match.</span>
+            </div>
+            <form class="site-form">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" />
+                </div>
+                <button class="btn btn-primary">Login</button>
+                <a href="#" class="forgot-password">Forgot my password?</a>
+            </form>
+        </div>
+        <div id="SignUpForm" class="dialog">
+            <form class="site-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" />
+                </div>
+                <div class="form-group">
+                    <label>Retype Password</label>
+                    <input type="password" />
+                </div>
+                <div class="form-group">
+                    <label>Country</label>
+                    <select name="country">
+                        <option>Select Country</option>
+                        <option>Nepal</option>
+                        <option>India</option>
+                        <option>Japan</option>
+                    </select>
+                </div>
+                
+                <button class="btn btn-primary">Join</button>
+                
+            </form>
+        </div>
+        <header id="top-horiz">
+            <div class="header">
+                <div id="logo-container">
+                    <a href="index.html" class="logo" >Continue <span>Trade</span></a>
+                    <span class="slogan">we connect your business</span>
+                </div>
+                <nav id="main-nav">
+                    <ul id="nav">
+                        <li>
+                            <a href="#">Memberships</a>
+                        </li>
+                        <li>
+                            <a href="#">Industries</a>
+                        </li>
+                        <li>
+                            <a href="#">Buy Leads</a>
+                        </li>
+                        <li>
+                            <a href="#">Sell Leads</a>
+                        </li>
+                    </ul>
+                    <div id="lang">
+                        <div id="polyglotLanguageSwitcher">
+                            <form action="#">
+                                <select id="polyglot-language-options">
+                                    <option id="en" value="en" selected>EN</option>
+                                    <option id="jp" value="jp">JP</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+        
+        
+        
+        <div id="main">
+            <div class="search full">
+                    <div class="search-container">
+                        <form id="quick-search" name="quickSearch">
+                            <select name="search_id" id="search_id" tabindex="1">
+				<option value="3">Products</option>
+				<option value="1">Industries</option>
+                            </select>
+                            <input class="searchInput" placeholder="type your keyword here..." id="keysearch" />
+                            <button id="quickSearchBtn">Search</button>
+                        </form>
+                    </div>
+                    <div class="account-logs">
+                        <a href="#" class="acc-sign">Join Free</a>
+                        <a href="#" class="acc-log">Log In</a>
+                    </div>
+            </div>
+            <div class="container">
+                <ul id="breadcrumbs">
+                    <li><a href="#">Home</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</li>
+                    <li><a href="#">Category Level 1</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</li>
+                    <li><a href="#">Category Level 2</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</li>
+                    <li><a href="#">Category Level 3</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</li>
+                    <li><span>Product Name</span></li>
+                </ul>
+                
+                <div class="action-main">
+                    <div class="content">
+                        <div class="product-data">
+                            <div class="product-image">
+                                <img src="images/product-image.jpg" alt="" />
+                            </div>
+                            <div class="product-datas">
+                                <h3>2014 hot selling breathable outdoor sex man winter jacket </h3>
+                                <ul class="specifics">
+                                    <li><span>Price:</span> IRS 2463 / piece</li>
+                                    <li><span>Category:</span> Clothings</li>
+                                    <li><span>Keyword:</span> Winter Jacket, Jacket, Outdoor Jacket</li>
+                                    <li><span>Origin:</span> China</li>
+                                </ul>
+                                <a href="#" class="inquiry"><span><img src="images/inquiry-icon.png" alt=""/></span> Inquiry Now</a>
+                                <a href="#" class="add-to-basket"><span><img src="images/add-to-basket.png" alt="" /></span>Add to basket</a>
+                            </div>
+                        </div>
+                        <div class="product-tabs">
+                            <div class="tabs">
+                                <ul>
+                                    <li><a href="#product-data-desc">Sell Lead Details</a></li>
+                                    <li><a href="#product-data-details">Product Specs</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                        
+                                        <div id="product-data-desc">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                                        </div>
+                                        <div id="product-data-details">
+                                            <div id="item-specifics">
+                                                <span class="specs-heading">Item specifics</span>
+                                                <ul class="specifics">
+                                                    <li>
+                                                        <span>Supply Ability:</span> 1000/M
+                                                    </li>
+                                                    <li>
+                                                        <span>Minimum Order:</span> IRS 5000
+                                                    </li>
+                                                    <li>
+                                                        <span>Lead Time:</span> 10 day
+                                                    </li>
+                                                    <li>
+                                                        <span>Packaging:</span> Standard exporting package
+                                                    </li>
+                                                    <li>
+                                                        <span>Model:</span> kt4-510
+                                                    </li>
+                                                    <li>
+                                                        <span>Brand name:</span> ansun
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div id="item-features">
+                                                <span class="specs-heading">Features</span>
+                                                <ul>
+                                                    <li>4D1 live full channels and 25fps(PAL) or 30fps(NTSC)</li>
+                                                    <li>8CH alarm input/ 2CH alarm output.</li>
+                                                    <li>Ability of large fleet management.</li>
+                                                    <li>Fanless design for great dustproof.</li>
+                                                    <li>Front SIM/SD key lock for anti-theft.</li>
+                                                    <li>High speed 802.11 b/g/n WIFI auto download.</li>
+                                                    <li>Multi sensors alarm, remote PTZ control.</li>
+                                                    <li>OEM, ODM service, 12 months warranty.</li>
+                                                    <li>Password access for sensitive operation.</li>
+                                                    <li>R&D develop ability, instant technician support.</li>
+                                                </ul>
+                                            </div>
+                                            <div id="item-specifications">
+                                                <span class="specs-heading">Specifications</span>
+                                                <ul>
+                                                    <li>4CH full D1 mobile DVR</li>
+                                                    <li>Multi languages and platforms.</li>
+                                                    <li>Storage: HDD +SD +USB</li>
+                                                    <li>OEM, ODM & Logo accepted</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </div> 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <aside class="rightbar">
+                        <div class="opt-supplier-detail">
+                            <span class="box-heading">Suppliers Details</span>
+                            <span class="supplier-title">Eten Technology Co. Ltd.</span>
+                            <ul>
+                                <li>
+                                    <span class="users"></span>
+                                    <p>Ivy Dai</p>
+                                </li>
+                                <li>
+                                    <span class="tel"></span>
+                                    <p>+86 756 2525268</p>
+                                </li>
+                                <li>
+                                    <span class="address"></span>
+                                    <p>NO.399 Xianghua Road,<br/>
+                                        Xiangzhou district, Zhuhai,<br/>
+                                        Guangdong, China</p>
+                                </li>
+                            </ul>
+                            <div class="supplier-link">
+                                <a href="#" class="supplier-contact">Contact Details</a>
+                                <a href="#" class="supplier-store">Visit Store</a>
+                            </div>
+                        </div>
+                        <div class="related-products">
+                            <span class="box-heading small">You may like:</span>
+                            <div class="products-items">
+                                <figure>
+                                    <img src="images/productLike1.jpg" alt="" />
+                                </figure>
+                                <a href="#">Good Quality Pvc Barbed Wire With Anti-Corrosion</a>
+                            </div>
+                            <div class="products-items">
+                                <figure>
+                                    <img src="images/productLike1.jpg" alt="" />
+                                </figure>
+                                <a href="#">Cr20Ni35 Resistance Wire</a>
+                            </div>
+                            <div class="products-items">
+                                <figure>
+                                    <img src="images/productLike1.jpg" alt="" />
+                                </figure>
+                                <a href="#">Heating Element / Furnace Element</a>
+                            </div>
+                            <div class="products-items">
+                                <figure>
+                                    <img src="images/productLike1.jpg" alt="" />
+                                </figure>
+                                <a href="#">Nichrome Wire(Cr20Ni80)</a>
+                            </div>
+                            <div class="products-items">
+                                <figure>
+                                    <img src="images/productLike1.jpg" alt="" />
+                                </figure>
+                                <a href="#">Electric Heating Wire(OCr25Al5)</a>
+                            </div>
+                        </div>
+                        <div class="interested-products">
+                            <span class="box-heading small">You may also be interested in:</span>
+                            <ul>
+                                <li><a href="#">Series Waterproof Connector</a></li>
+                                <li><a href="#">Bundled Cables</a></li>
+                                <li><a href="#">Bundled Network Cable</a></li>
+                                <li><a href="#">Audio Cables Connectors</a></li>
+                                <li><a href="#">Cable And Connectors To Mini</a></li>
+                                <li><a href="#">Waterproof Box End Connector</a></li>
+                                <li><a href="#">Insulation Connectors</a></li>
+                                <li><a href="#">Cable And Connectors</a></li>
+                                <li><a href="#">Coaxial Cable Connectors</a></li>
+                                <li><a href="#">Insulation Connector</a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <div class="footer full">
+            <div class="container">
+                <div class="footer-link-container">
+                        <div class="footer-links">
+                            <h4>General Links</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Memberships</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Advertise with us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Buying Trades</h4>
+                            <ul>
+                                <li><a href="#">Post Buying Leads</a></li>
+                                <li><a href="#">Browse Categories</a></li>
+                                <li><a href="#">Products by Keywords</a></li>
+                                <li><a href="#">Products by Country</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Selling Trades</h4>
+                            <ul>
+                                <li><a href="#">Post Selling Leads</a></li>
+                                <li><a href="#">Manage Products</a></li>
+                                <li><a href="#">Search Buying Leads</a></li>
+                                <li><a href="#">Post Products</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Customer Service</h4>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Submit a complaint</a></li>
+                                <li><a href="#">Policies &amp; Rules</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            
+            <footer id="footer">
+                    <div class="bottom-menu">
+                        <a href="#">Product Listing Policy</a> -
+                        <a href="#">Intellectual Property Policy and Infringement Claims</a> -
+                        <a href="#">Privacy Policy</a> -
+                        <a href="#">Terms of Use</a> -
+                        <a href="#">Site Map</a>
+                    </div>
+                    <p>Copyright &copy; 2014. All Rights Reserved to Continue Trade.</p>
+                    <p>Digital Partner <a href="http://www.transparentdigitalagency.com" class="digital-agency" target="_blank">Transparent Digital Agency</a></p>
+        </footer>
+        </div>
+        
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery-min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/classie.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/languageselector.js"></script>
+        <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+        <script type="text/javascript" src="js/tiltSlider.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    
+    </body>
+</html>

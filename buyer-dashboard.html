@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Rajdhani:400,600,500,700' rel='stylesheet' type='text/css'>
+        <link href="css/normalize.css" type="text/css" rel="stylesheet" >
+        <link href="css/jquery-ui.min.css" type="text/css" rel="stylesheet" >
+        <link href="css/component.css" type="text/css" rel="stylesheet" >
+        <link href="css/site-style.css" type="text/css" rel="stylesheet" >
+    </head>
+    <body>
+        <!--Dialog Login Form-->
+        <div id="loginForm" class="dialog">
+            <div class="error-msg">
+                <span>Username/Password doesn’t match.</span>
+            </div>
+            <form class="site-form">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" />
+                </div>
+                <button class="btn btn-primary">Login</button>
+                <a href="#" class="forgot-password">Forgot my password?</a>
+            </form>
+        </div>
+        <div id="SignUpForm" class="dialog">
+            <form class="site-form">
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" />
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" />
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" />
+                </div>
+                <div class="form-group">
+                    <label>Retype Password</label>
+                    <input type="password" />
+                </div>
+                <div class="form-group">
+                    <label>Country</label>
+                    <select name="country">
+                        <option>Select Country</option>
+                        <option>Nepal</option>
+                        <option>India</option>
+                        <option>Japan</option>
+                    </select>
+                </div>
+                
+                <button class="btn btn-primary">Join</button>
+                
+            </form>
+        </div>
+        <header id="top-horiz">
+            <div class="header">
+                <div id="logo-container">
+                    <a href="index.html" class="logo" >Continue <span>Trade</span></a>
+                    <span class="slogan">we connect your business</span>
+                </div>
+                <nav id="main-nav">
+                    <ul id="nav">
+                        <li>
+                            <a href="#">Memberships</a>
+                        </li>
+                        <li>
+                            <a href="#">Industries</a>
+                        </li>
+                        <li>
+                            <a href="#">Buy Leads</a>
+                        </li>
+                        <li>
+                            <a href="#">Sell Leads</a>
+                        </li>
+                    </ul>
+                    <div id="lang">
+                        <div id="polyglotLanguageSwitcher">
+                            <form action="#">
+                                <select id="polyglot-language-options">
+                                    <option id="en" value="en" selected>EN</option>
+                                    <option id="jp" value="jp">JP</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </header>
+        
+        
+        
+        <div id="main">
+            <div class="search full">
+                    <div class="search-container">
+                        <form id="quick-search" name="quickSearch">
+                            <select name="search_id" id="search_id" tabindex="1">
+				<option value="3">Products</option>
+				<option value="1">Industries</option>
+                            </select>
+                            <input class="searchInput" placeholder="type your keyword here..." id="keysearch" />
+                            <button id="quickSearchBtn">Search</button>
+                        </form>
+                    </div>
+                    <div class="account-logs">
+                        <a href="#" class="acc-sign">Join Free</a>
+                        <a href="#" class="acc-log">Log In</a>
+                    </div>
+                </div>
+            <div class="container">
+                <div class="buyer-dashboard">
+                    <aside class="account-menu">
+                        <div class="acc-menu">
+                            <h2>My Account</h2>
+                            <ul>
+                                <li>
+                                    <a href="#">My Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#">Message Center</a>
+                                </li>
+                                <li>
+                                    <a href="#">Post a Product</a>
+                                </li>
+                                <li>
+                                    <a href="#">Manage product</a>
+                                </li>
+                                <li>
+                                    <a href="#">Post/Manage Leads</a>
+                                </li>
+                                <li>
+                                    <a href="#">Change Password</a>
+                                </li>
+                                <li>
+                                    <a href="#">Edit Profile</a>
+                                </li>
+                                <li>
+                                    <a href="#">Inquiries</a>
+                                </li>
+                                <li>
+                                    <a href="#">Log Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="review-ct">
+                            <h2>Leave us a review</h2>
+                            <form>
+                                <div class="form-group">
+                                    <textarea></textarea>
+                                </div>
+                                <button class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div class="contact-ct">
+                            <h2>Contact Continue Trade</h2>
+                            <p>
+                                Gyaneshwor, Kathmandu<br/>
+                                Nepal.<br/>
+                                Tel. No.: +977-014822063<br/>
+                                Email: help@continuetrade.com
+                            </p>
+                        </div>
+                    </aside>
+                    <div class="dashboard-main">
+                        <div class="ct-box"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer full">
+            <div class="container">
+                <div class="footer-link-container">
+                        <div class="footer-links">
+                            <h4>General Links</h4>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Memberships</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Advertise with us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Buying Trades</h4>
+                            <ul>
+                                <li><a href="#">Post Buying Leads</a></li>
+                                <li><a href="#">Browse Categories</a></li>
+                                <li><a href="#">Products by Keywords</a></li>
+                                <li><a href="#">Products by Country</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Selling Trades</h4>
+                            <ul>
+                                <li><a href="#">Post Selling Leads</a></li>
+                                <li><a href="#">Manage Products</a></li>
+                                <li><a href="#">Search Buying Leads</a></li>
+                                <li><a href="#">Post Products</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links">
+                            <h4>Customer Service</h4>
+                            <ul>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Submit a complaint</a></li>
+                                <li><a href="#">Policies &amp; Rules</a></li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+            
+            <footer id="footer">
+                    <div class="bottom-menu">
+                        <a href="#">Product Listing Policy</a> -
+                        <a href="#">Intellectual Property Policy and Infringement Claims</a> -
+                        <a href="#">Privacy Policy</a> -
+                        <a href="#">Terms of Use</a> -
+                        <a href="#">Site Map</a>
+                    </div>
+                    <p>Copyright &copy; 2014. All Rights Reserved to Continue Trade.</p>
+                    <p>Digital Partner <a href="http://www.transparentdigitalagency.com" class="digital-agency" target="_blank">Transparent Digital Agency</a></p>
+        </footer>
+        </div>
+        
+        <script type="text/javascript" src="js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="js/jquery-min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/classie.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/languageselector.js"></script>
+        <script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+        <script type="text/javascript" src="js/tiltSlider.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+    
+    </body>
+</html>
